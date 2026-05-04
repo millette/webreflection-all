@@ -1,5 +1,6 @@
 {
   "name": "@webreflection/all",
+  "version": "0.0.0",
   "description": "A Promise.all companion with object literal super powers.",
   "keywords": [
     "promise",
@@ -12,13 +13,13 @@
   "type": "module",
   "scripts": {
     "build": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --stripInternal --target es2022 --module esnext index.js",
+    "coverage": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
     "test": "c8 node test.js"
   },
   "devDependencies": {
     "c8": "^11.0.0",
     "typescript": "^6.0.3"
   },
-  "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
