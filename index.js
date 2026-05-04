@@ -21,9 +21,9 @@ resolve = resolve.bind(Promise);
  * @returns {Promise<unknown>}
  */
 const values = (obj, ...rest) => {
-    // resolve all arguments passed along as array
-    if (rest.length)
-      return all([obj, ...rest]);
+  // resolve all arguments passed along as array
+  if (rest.length)
+    return all([obj, ...rest]);
 
   // resolve all entries in the array
   if (isArray(obj))
