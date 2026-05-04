@@ -1,6 +1,6 @@
 {
   "name": "@webreflection/all",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Promise.all companion with object literal super powers.",
   "keywords": [
     "promise",
