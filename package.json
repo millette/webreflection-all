@@ -11,6 +11,16 @@
     "values"
   ],
   "type": "module",
+  "types": "./index.d.ts",
+  "main": "./index.js",
+  "module": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "build": "tsc --allowJs --checkJs --declaration --emitDeclarationOnly --stripInternal --target es2022 --module esnext index.js",
     "coverage": "mkdir -p ./coverage; c8 report --reporter=text-lcov > ./coverage/lcov.info",
@@ -20,14 +30,12 @@
     "c8": "^11.0.0",
     "typescript": "^6.0.3"
   },
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebReflection/all.git"
   },
-  "author": "",
-  "license": "ISC",
-  "types": "./index.d.ts",
+  "author": "Andrea Giammarchi",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/WebReflection/all/issues"
   },
